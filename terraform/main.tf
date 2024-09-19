@@ -20,3 +20,8 @@ module "rds" {
   db_subnet_group_name   = module.aws.group_subnet_name_db
   vpc_security_group_ids = [module.aws.vpc_sg]
 }
+
+module "grafana" {
+  source     = "./modules/aws/grafana"
+  aws_region = "us-east-1"
+}
