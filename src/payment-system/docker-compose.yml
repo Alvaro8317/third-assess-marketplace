@@ -18,3 +18,9 @@ services:
       - rabbitmq
     ports:
       - "18672:8000"
+
+  gateway:
+    build: ./gateway
+    ports:
+      - "50053:50051"
+

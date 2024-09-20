@@ -6,7 +6,7 @@ import time
 def send_message():
     payment_details = {
         "amount": random.randint(3000, 10000),
-        "currency": "COP",
+        "payment_method": "Tarjeta",
         "user_id": 1,
     }
     connection = pika.BlockingConnection(
@@ -27,5 +27,5 @@ def send_message():
 
 
 while True:
-    time.sleep(2)
+    time.sleep(15)
     send_message()
