@@ -9,3 +9,11 @@ output "group_subnet_name_db" {
 output "vpc_sg" {
   value = aws_security_group.database_sg.id
 }
+
+output "s3_bucket" {
+  value = aws_s3_bucket.react-marketplace.bucket
+}
+
+output "URI_Ecr" {
+  value = aws_ecr_repository.marketplace-repository.repository_url
+}
