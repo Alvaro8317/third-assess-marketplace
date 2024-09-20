@@ -1,0 +1,141 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Contenedor principal */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f2f7f1;
+  padding: 20px;
+}
+
+/* Estilos del header */
+.header {
+  background-color: #4caf50;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Contenedor del chat */
+.chat-container {
+  background-color: white;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Lista de mensajes */
+.message-list {
+  margin-bottom: 20px;
+}
+
+.message-list h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #2e7d32;
+}
+
+.message-list ul {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.message {
+  background-color: #e8f5e9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Input y botón de enviar */
+.input-container {
+  display: flex;
+  gap: 10px;
+}
+
+.input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 2px solid #4caf50;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.send-button {
+  padding: 10px 20px;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.send-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.send-button:hover {
+  background-color: #fb8c00;
+}
+
+/* Botones de conectar y desconectar */
+.connection-buttons {
+  margin: 20px;
+}
+
+.connect-button, .disconnect-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.disconnect-button {
+  background-color: #f44336;
+}
+
+.connect-button:hover {
+  background-color: #45a049;
+}
+
+.disconnect-button:hover {
+  background-color: #e53935;
+}
